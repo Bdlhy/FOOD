@@ -1,0 +1,155 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-size: 14px;
+	color: #656d78;
+	background-color: #f5f7fa;
+	position: relative;
+}
+
+.container{
+	width: 1190px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:red;
+}
+
+.nav{
+	background-color: green;
+	height: 50px;
+	margin-bottom: 50px;
+}
+.nav .user_welcome {
+	margin-left: 1000px;
+	line-height: 50px;
+}
+.nav .user_welcome .loginout {
+	text-decoration: none;
+}
+.nav .user_welcome .loginout:hover {
+	text-decoration: underline;
+}
+
+.top{
+	background-color: blue;
+	height:150px;
+}
+.top .top_img{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	background-color: pink;
+	top:65px;
+	left:150px;
+}
+.top .top_input{
+	position: absolute;
+	top: 200px;
+	right:200px;
+	border-bottom:1px solid black;
+	border-left: 1px solid black;
+	width:300px;
+	height: 35px;
+	font-size: 25px;
+}
+.top .top_button {
+	position: absolute;
+	top: 200px;
+	right:130px;
+	height: 35px;
+	width: 55px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.food {
+	height: 600px;
+	background-color: lightgreen;
+}
+.food .food_box {
+	height: 600px;
+	background-color: lightyellow;
+	width: 800px;
+	margin: auto;
+}
+.food .food_box .food_img {
+	width: 220px;
+	height: 180px;
+	background-color: green;
+	margin-top: 20px;
+	margin-left: 10px;
+	float: left;
+	margin-right: 20px;
+}
+.food .food_box .food_information {
+	height: 80px;
+	width: 500px;
+	float: left;
+	margin-top: 20px;
+} 
+.food .food_box .food_information .food_inf {
+	display: block;
+	margin-top: 20px;
+	float: left;
+}
+.food .food_box .food_information .food_sure{
+	float: right;
+	width: 80px;
+	height: 35px;
+	margin-right: 40px;
+}
+.food .food_box .food_evaluate {
+	height: 100px;
+	width: 500px;
+	float: left;
+	background-color: yellow;
+}
+.food .food_box .food_evaluate .food_content {
+	width: 80px;
+	float: left;
+}
+.food .food_box .food_evaluate .food_content .content {
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+}
+.food .food_box .food_evaluate .food_message {
+	width: 250px;
+	float: left;
+}
+.food .food_box .food_evaluate .food_message .message {
+	width: 250px;
+	height: 30px;
+	line-height: 20px;
+	float: left;
+	background-color: pink;
+	margin-left: 10px;
+}
+.food .food_box .food_evaluate .food_button {
+	float: right;
+	width: 80px;
+	margin-right: 20px;
+	margin-top: 10px; 
+	height: 25px;
+}
+.food .food_box .food_putin .putin {
+	width: 640px;
+	height: 200px;
+	margin-left:80px;
+	margin-top: 30px;
+}
+.food .food_box .food_putin .putin_button {
+	width: 80px;
+	height: 40px;
+	margin-left: 630px;
+	margin-top: 20px;
+}
+
+.footer{
+	background-color: yellow;
+	height: 90px;
+}

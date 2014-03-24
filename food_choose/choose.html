@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>你的美食你做主</title>
+<link href="css/choose.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div class="header container">
+
+	<div class="nav">
+		
+		<!--这个地方需要后端返回用户信息-->
+		<span class="user_welcome">欢迎你，         <a href="index.html" class="loginout">退出登录</a></span>
+
+	</div>
+
+	<div class="top">
+		
+		<div class="top_img">23</div>
+
+		<input type="text" class="top_input" />
+
+		<button class="top_button">搜索</button>
+
+	</div>
+
+</div>
+
+<div class="container choose">
+	
+	<div class="choose_right"></div>
+
+	<div class="choose_left">
+		
+		<div class="over restaurant">
+			
+			<img src="###" alt="风华" class="rest" />
+
+			<img src="###" alt="万友" class="rest" />
+
+			<img src="###" alt="阳光" class="rest" />
+
+			<img src="###" alt="桂苑" class="rest" />
+
+			<img src="###" alt="西北" class="rest" />
+
+		</div>
+
+	</div>
+
+	<div class="choose_left">
+		
+		<div class="over x"></div>
+
+	</div>
+
+	<div class="choose_left">
+
+		<div class="over xx"></div>
+
+	</div>
+
+	<div class="choose_left">
+		
+		<div class="over xxx"></div>
+
+	</div>
+
+
+
+</div>
+
+
+<div class="footer container">3</div>
+
+
+<script src="js/jQuery.js"></script>
+<script>
+	$(".choose_left").mouseenter(function(){
+		$(this).children(".over").css("display","block");
+		$(".choose_right").css('display', 'none');
+	});
+	$(".choose_left").mouseleave(function(){
+		$(this).children(".over").css("display","none");
+		$(".choose_right").css('display', 'block');
+	});
+</script>
+
+
+
+
+</body>
+</html>
