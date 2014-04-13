@@ -14,11 +14,10 @@ body{
 	width: 1190px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color:red;
 }
 
 .nav{
-	background-color: green;
+	background: url(../images/head1-1.jpg) no-repeat;
 	height: 50px;
 	margin-bottom: 50px;
 }
@@ -34,35 +33,42 @@ body{
 }
 
 .top{
-	background-color: blue;
+	background: url(../images/head2-1.jpg);
 	height:150px;
 }
 .top .top_img{
 	position: absolute;
 	height: 150px;
 	width: 150px;
-	background-color: pink;
 	top:65px;
 	left:150px;
 }
 .top .top_input{
 	position: absolute;
 	top: 200px;
-	right:200px;
-	border-bottom:1px solid black;
-	border-left: 1px solid black;
-	width:300px;
-	height: 35px;
+	right:210px;
+	border:0px;
+	width:280px;
+	height: 40px;
 	font-size: 25px;
+	background: url(../images/搜索框330x40.jpg);
+	border-bottom-left-radius:0.2em;
+	border-top-left-radius:0.2em;
 }
 .top .top_button {
 	position: absolute;
 	top: 200px;
-	right:130px;
-	height: 35px;
-	width: 55px;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+	right:170px;
+	height: 40px;
+	width: 40px;
+	border:0;
+	background: url(../images/搜索框330x40.jpg);
+	background-position: -290px 0;
+	border-bottom-right-radius:0.3em;
+	border-top-right-radius:0.3em;
+}
+.top .top_button:hover {
+	cursor: pointer;
 }
 
 .choose {
@@ -114,6 +120,30 @@ body{
 }
 
 .footer{
-	background-color: yellow;
 	height: 90px;
+}
+.footer .ul1 {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #999;
+	clear: both;
+}
+.footer .ul2 {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #999;
+	clear: both;
+}
+.footer li {
+	display: inline;
+}
+.footer li a {
+text-decoration: none;
+color: #999;
+}
+.footer p {
+	text-align: center;
+	color: #666;
 }
