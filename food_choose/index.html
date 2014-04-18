@@ -10,22 +10,13 @@
 
 <div class="header container">
 
-	<div class="nav" style="display:block">
+	<div class="nav">
 	
 		<h2 class="name">电子科大关爱食堂小组</h2>
 
 		<a href="javascript:;" class="a1" title="登录"><i class="plus icon"></i></a>
 
       	<a href="javascript:;" title="注册"><i class="off icon"></i></a>
-
-	</div>
-
-	<div class="nav" style="display:none">
-
-		<h2 class="name">电子科大关爱食堂小组</h2>
-		
-		<!--这个地方需要后端返回用户信息-->
-		<span class="user_welcome">欢迎你，         <a href="index.html" class="loginout">退出登录</a></span>
 
 	</div>
 
@@ -49,9 +40,9 @@
 
 			<a href="javascript:;" target="_blank"><img src="images/body950x410.jpg" /></a>
 
-        	<a href="javascript:;" target="_blank"><img src="images/body2（950x410）.jpg" /></a>
+        	<a href="javascript:;" target="_blank"><img src="images/index2.jpg" /></a>
 
-       		<a href="javascript:;" target="_blank"><img src="images/body3（950x410）.jpg" /></a>
+       		<a href="javascript:;" target="_blank"><img src="images/index3.jpg" /></a>
 
         	<a href="javascript:;" target="_blank"><img src="images/index4.jpg" /></a>
 
@@ -114,80 +105,71 @@
 		<h2 class="modal-header-welcome">欢迎光临</h2>
 
 	</div>
-	<form action="index.php" method="post">
-		<div class="modal-body">
+
+	<div class="modal-body">
+		
+		<div class="modal-control">
 			
-			<div class="modal-control">
-				
-				<p class="modal-name">帐号:	<input type="text" id="name" name="UserName" class="modal-name-input" /></p>
-				
-				
-
-			</div>
-
-			<div class="modal-control">
-
-				<p class="modal-password">密码:	<input type="text" id="passward" name="PWD" class="modal-password-input" /></p>
-
-			</div>
-
-			<div class="modal-control">
-
-				<p class="modal-validate">验证:	<input type="text" class="modal-validate-input" /></p>
-
-			</div>
+			<p class="modal-name">帐号:	<input type="text" class="modal-name-input" /></p>
+			
+			
 
 		</div>
 
-		<div class="modal-footer">
-			
-			<input type="button" value="登录" class="modal-footer-login" />
+		<div class="modal-control">
 
+			<p class="modal-password">密码:	<input type="text" class="modal-password-input" /></p>
 
 		</div>
-	</form>
+
+		<div class="modal-control">
+
+			<p class="modal-validate">验证:	<input type="text" class="modal-validate-input" /></p>
+
+		</div>
+
+	</div>
+
+	<div class="modal-footer">
+		
+		<a href="index.html" class="modal-footer-login">登录</a>
+
+
+	</div>
 
 </div>
-<div class="modal-backdrop fade"></div>
+
 
 
 <script type="text/javascript" src="js/jQuery.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script language="php">
-session_start();
-$Errmsg="";
-$con = mysql_connect("localhost","root","root");
-mysql_query('SET NAMES gb2312');
-if (!$con)
-{
-	die('Could not connect: ' . mysql_error());
-}
-mysql_select_db("order_system", $con);
+<script type="text/javascript">
+var i =0;
+$(document).ready(function(){
+    var t;
+    var abc = function(){
+        if(i==3)i=-1;
+        i=i+1;
+        var a=i*-950;
+        var j = a+'px';
+        $(".imgbox").css("left",j);
+        setTimeout(abc,8000);
+    }
+    abc();
+})
 
-$sql="SELECT * FROM user_info where UserName='$_POST[UserName]' AND PWD='$_POST[PWD]'";
-$result=mysql_query($sql,$con);
-if(!mysql_num_rows($result))
-{
-	$Errmsg="用户名或密码错误";
-}
+$(".close").click(function(){
+	$(".modal").css('display', 'none');
+	$(".modal-backdrop").css('display', 'none');
+});
 
-$sql="SELECT * FROM user_info where UserName='$_POST[UserName]'";
-$result=mysql_query($sql,$con);
-if(!mysql_num_rows($result))
-{
-	$Errmsg="该用户名不存在";
-}
+$(".a1").click(function() {
+	$(".modal").css('display', 'block');
+	$(".modal-backdrop").css('display', 'block');
+});
 
-if($Errmsg)
-{
-	echo "$Errmsg";
-}
-else
-{
-	echo "success!";
-}
 </script>
 
+<div class="modal-backdrop fade"></div>
 
 </body>
 </html>
