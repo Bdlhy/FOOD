@@ -54,6 +54,11 @@ i {
 .nav .off {
 	background-position: -408px -96px;
 }
+.nav .user_welcome {
+	line-height: 50px;
+	margin-left: 1000px;
+	height: 50px;
+}
 
 
 .top{
@@ -61,9 +66,9 @@ i {
 	height:150px;
 }
 .top .top_img{
-	position: absolute;
 	height: 150px;
 	width: 150px;
+	position: absolute;
 	top:65px;
 	left:150px;
 }
@@ -255,6 +260,7 @@ button.close {
 	text-align: center;
 	margin-left: 320px;
 	margin-top: 10px;
+	border:0;
 	border-bottom-right-radius:0.5em;
 	border-bottom-left-radius:0.5em;
 	border-top-right-radius:0.5em;

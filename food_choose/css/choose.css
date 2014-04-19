@@ -18,12 +18,39 @@ body{
 
 .nav{
 	background: url(../images/head1-1.jpg) no-repeat;
+	height: 85px;
+	margin-bottom: 15px;
+	display: block;
+}
+.nav .name {
+	line-height: 50px;
 	height: 50px;
-	margin-bottom: 50px;
+	margin-top: 10px;
+	margin-left: 20px; 
+	color: white;
+}
+.nav .a1 {
+	margin-left: 1130px;
+}
+.nav .icon {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-top: 15px;
+	line-height: 14px;
+	background: url("../images/glyphicons-halflings.png");
+	margin-left: 5px;
+}
+.nav .plus {
+	background-position: -168px 0;
+}
+.nav .off {
+	background-position: -408px -96px;
 }
 .nav .user_welcome {
-	margin-left: 1000px;
 	line-height: 50px;
+	margin-left: 1000px;
+	height: 50px;
 }
 .nav .user_welcome .loginout {
 	text-decoration: none;
@@ -35,6 +62,7 @@ body{
 .top{
 	background: url(../images/head2-1.jpg);
 	height:150px;
+	margin-bottom: 10px;
 }
 .top .top_img{
 	position: absolute;
@@ -73,51 +101,268 @@ body{
 
 .choose {
 	height: 600px;
-	background-color: lightgreen;
 	position: relative;
+	margin-bottom: 10px;
+}
+.choose .all {
+	background: url(../images/食堂选择/左选择框底色220x600.jpg)no-repeat;
+	margin-left: 10px;
 }
 .choose .choose_right {
-	height: 590px;
-	width: 1000px;
-	background-color: pink;
+	height: 600px;
+	width: 940px;
+	background:url(../images/食堂选择/第一选择背景940x600.jpg);
 	float: right;
 	margin-right: 20px;
 	display: block;
 }
 .choose .choose_left {
-	height: 140px;
-	width: 160px;
-	background-color: white;
-	margin-top: 10px;
+	height: 150px;
+	width: 220px;
 	margin-left: 10px;
 }
 .choose .choose_left .over {
-	background-color: blue;
-	height: 590px;
-	width: 1000px;
+	height: 600px;
+	width: 940px;
 	display: none;
 	top: 0;
-	left: 160px;
+	left: 230px;
 	position: absolute;
 }
-.choose .choose_left .restarant {
-	background-color: pink;
+.choose .choose_left .restaurant {
+	background: url(../images/食堂选择/第一选择背景940x600.jpg);
 }
-.choose .choose_left .x {
-	background-color: yellow;
+.choose .choose_left .kind_choose {
+	background: url(../images/食堂选择/第二次选择背景940x600.jpg);
 }
-.choose .choose_left .xx {
-	background-color: lightblue;
+.choose .choose_left .lookalook {
+	background: url(../images/食堂选择/第三次选择背景940x600.jpg);
 }
-.choose .choose_left .xxx{
-	background-color: grey;
+.choose .choose_left .food_recommended{
+	background: url(../images/食堂选择/第四次选择背景940x600.jpg);
 }
+.choose .left1:hover{
+	margin-left:0px;
+	background: url(../images/食堂选择/左选择框按钮①220x150.jpg)no-repeat left;
+}
+.choose .left2:hover{
+	margin-left:0px;
+	background: url(../images/食堂选择/左选择框按钮②220x150.jpg)no-repeat left;
+} 
+.choose .left3:hover{
+	margin-left:0px;
+	background: url(../images/食堂选择/左选择框按钮③220x150.jpg)no-repeat left;
+}
+.choose .left4:hover{
+	margin-left:0px;
+	background: url(../images/食堂选择/左选择框按钮④220x150.jpg)no-repeat left;
+}
+
 .choose .choose_left .over .rest {
-	height:200px;
-	width:300px;
-	margin-top:40px;
-	margin-left: 20px;
+	height:100px;
+	width:920px;
+	margin-left: 25px;
 }
+.choose .choose_left .over .rest1 {
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+	background:url(../images/食堂选择/1.jpg);
+}
+.choose .choose_left .over .rest1:hover {
+	background: url(../images/食堂选择/2.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .rest2 {
+	background:url(../images/食堂选择/9.jpg);
+}
+.choose .choose_left .over .rest2:hover {
+	background: url(../images/食堂选择/10.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .rest3 {
+	background:url(../images/食堂选择/23.jpg);
+}
+.choose .choose_left .over .rest3:hover {
+	background: url(../images/食堂选择/24.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .rest4 {
+	background:url(../images/食堂选择/3.jpg);
+}
+.choose .choose_left .over .rest4:hover {
+	background: url(../images/食堂选择/4.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .rest5 {
+	background:url(../images/食堂选择/7.jpg);
+}
+.choose .choose_left .over .rest5:hover {
+	background: url(../images/食堂选择/8.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .rest6 {
+	border-bottom-left-radius:1em;
+	border-bottom-right-radius:1em;
+	background:url(../images/食堂选择/21.jpg);
+}
+.choose .choose_left .over .rest6:hover {
+	background: url(../images/食堂选择/22.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .kind {
+	height:100px;
+	width:920px;
+	margin-left: 25px;
+}
+.choose .choose_left .over .kind1 {
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+	background:url(../images/食堂选择/5.jpg);
+}
+.choose .choose_left .over .kind1:hover {
+	background: url(../images/食堂选择/6.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .kind2 {
+	background:url(../images/食堂选择/11.jpg);
+}
+.choose .choose_left .over .kind2:hover {
+	background: url(../images/食堂选择/12.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .kind3 {
+	background:url(../images/食堂选择/13.jpg);
+}
+.choose .choose_left .over .kind3:hover {
+	background: url(../images/食堂选择/14.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .kind4 {
+	background:url(../images/食堂选择/15.jpg);
+}
+.choose .choose_left .over .kind4:hover {
+	background: url(../images/食堂选择/16.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .kind5 {
+	background:url(../images/食堂选择/17.jpg);
+}
+.choose .choose_left .over .kind5:hover {
+	background: url(../images/食堂选择/18.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .kind6 {
+	border-bottom-left-radius:1em;
+	border-bottom-right-radius:1em;
+	background:url(../images/食堂选择/19.jpg);
+}
+.choose .choose_left .over .kind6:hover {
+	background: url(../images/食堂选择/20.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .look {
+	height:100px;
+	width:920px;
+	margin-left: 25px;
+}
+.choose .choose_left .over .look1 {
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+	background:url(../images/食堂选择/27.jpg);
+}
+.choose .choose_left .over .look1:hover {
+	background: url(../images/食堂选择/28.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .look2 {
+	background:url(../images/食堂选择/45.jpg);
+}
+.choose .choose_left .over .look2:hover {
+	background: url(../images/食堂选择/46.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .look3 {
+	background:url(../images/食堂选择/37.jpg);
+}
+.choose .choose_left .over .look3:hover {
+	background: url(../images/食堂选择/38.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .look4 {
+	background:url(../images/食堂选择/41.jpg);
+}
+.choose .choose_left .over .look4:hover {
+	background: url(../images/食堂选择/42.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .look5 {
+	background:url(../images/食堂选择/43.jpg);
+}
+.choose .choose_left .over .look5:hover {
+	background: url(../images/食堂选择/44.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .look6 {
+	border-bottom-left-radius:1em;
+	border-bottom-right-radius:1em;
+	background:url(../images/食堂选择/47.jpg);
+}
+.choose .choose_left .over .look6:hover {
+	background: url(../images/食堂选择/48.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .recommended {
+	height:100px;
+	width:920px;
+	margin-left: 25px;
+}
+.choose .choose_left .over .recommended1 {
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+	background:url(../images/食堂选择/25.jpg);
+}
+.choose .choose_left .over .recommended1:hover {
+	background: url(../images/食堂选择/26.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .recommended2 {
+	background:url(../images/食堂选择/35.jpg);
+}
+.choose .choose_left .over .recommended2:hover {
+	background: url(../images/食堂选择/36.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .recommended3 {
+	background:url(../images/食堂选择/29.jpg);
+}
+.choose .choose_left .over .recommended3:hover {
+	background: url(../images/食堂选择/30.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .recommended4 {
+	background:url(../images/食堂选择/31.jpg);
+}
+.choose .choose_left .over .recommended4:hover {
+	background: url(../images/食堂选择/32.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .recommended5 {
+	background:url(../images/食堂选择/33.jpg);
+}
+.choose .choose_left .over .recommended5:hover {
+	background: url(../images/食堂选择/34.jpg);
+	cursor: pointer;
+}
+.choose .choose_left .over .recommended6 {
+	border-bottom-left-radius:1em;
+	border-bottom-right-radius:1em;
+	background:url(../images/食堂选择/39.jpg);
+}
+.choose .choose_left .over .recommended6:hover {
+	background: url(../images/食堂选择/40.jpg);
+	cursor: pointer;
+}
+
 
 .footer{
 	height: 90px;

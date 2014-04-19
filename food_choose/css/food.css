@@ -18,12 +18,39 @@ body{
 
 .nav{
 	background: url(../images/head1-1.jpg) no-repeat;
+	height: 85px;
+	margin-bottom: 15px;
+	display: block;
+}
+.nav .name {
+	line-height: 50px;
 	height: 50px;
-	margin-bottom: 50px;
+	margin-top: 10px;
+	margin-left: 20px; 
+	color: white;
+}
+.nav .a1 {
+	margin-left: 1130px;
+}
+.nav .icon {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-top: 15px;
+	line-height: 14px;
+	background: url("../images/glyphicons-halflings.png");
+	margin-left: 5px;
+}
+.nav .plus {
+	background-position: -168px 0;
+}
+.nav .off {
+	background-position: -408px -96px;
 }
 .nav .user_welcome {
-	margin-left: 1000px;
 	line-height: 50px;
+	margin-left: 1000px;
+	height: 50px;
 }
 .nav .user_welcome .loginout {
 	text-decoration: none;
@@ -35,6 +62,7 @@ body{
 .top{
 	background: url(../images/head2-1.jpg);
 	height:150px;
+	margin-bottom: 10px;
 }
 .top .top_img{
 	position: absolute;
@@ -50,7 +78,7 @@ body{
 	border:0px;
 	width:280px;
 	height: 40px;
-	font-size: 25px;
+	font-size: 18px;
 	background: url(../images/搜索框330x40.jpg);
 	border-bottom-left-radius:0.2em;
 	border-top-left-radius:0.2em;
@@ -73,11 +101,16 @@ body{
 
 .food {
 	height: 600px;
-	background-color: lightgreen;
+	background:url(../images/具体菜品页面/背景800x535.jpg) no-repeat center top;
+}
+.food .left_img {
+	float: left;
+}
+.food .right_img {
+	float: right;
 }
 .food .food_box {
 	height: 600px;
-	background-color: lightyellow;
 	width: 800px;
 	margin: auto;
 }
@@ -95,7 +128,11 @@ body{
 	width: 500px;
 	float: left;
 	margin-top: 20px;
+	color: white;
 } 
+.food .food_box .food_information .food_name {
+	color: white;
+}
 .food .food_box .food_information .food_inf {
 	display: block;
 	margin-top: 20px;
@@ -106,12 +143,14 @@ body{
 	width: 80px;
 	height: 35px;
 	margin-right: 40px;
+	background: url(../images/具体菜品页面/就吃它了80x35.jpg);
+	border:0;
+	color: white;
 }
 .food .food_box .food_evaluate {
 	height: 100px;
 	width: 500px;
 	float: left;
-	background-color: yellow;
 }
 .food .food_box .food_evaluate .food_content {
 	width: 80px;
@@ -122,6 +161,7 @@ body{
 	height: 30px;
 	line-height: 30px;
 	float: left;
+	color: white;
 }
 .food .food_box .food_evaluate .food_message {
 	width: 250px;
@@ -132,27 +172,45 @@ body{
 	height: 30px;
 	line-height: 20px;
 	float: left;
-	background-color: pink;
 	margin-left: 10px;
+}
+.food .food_box .food_evaluate .food_message .eva1{
+	background: url(../images/具体菜品页面/星星（4）250x30.png);
+}
+.food .food_box .food_evaluate .food_message .eva2{
+	background: url(../images/具体菜品页面/星星（3）250x30.png);
+}
+.food .food_box .food_evaluate .food_message .eva3{
+	background: url(../images/具体菜品页面/星星（5）250x30.png);
 }
 .food .food_box .food_evaluate .food_button {
 	float: right;
 	width: 80px;
 	margin-right: 20px;
-	margin-top: 10px; 
-	height: 25px;
+	margin-top: 20px; 
+	height: 20px;
+	background: url(../images/具体菜品页面/小按钮80x20.jpg);
+	border:0;
+	color: white;
 }
 .food .food_box .food_putin .putin {
-	width: 640px;
-	height: 200px;
-	margin-left:80px;
+	width: 680px;
+	height: 180px;
+	margin-left:50px;
 	margin-top: 30px;
+	padding: 10px;
+	background: url(../images/具体菜品页面/评论框700x200.jpg) no-repeat;
+	border:0;
+	color:white;
 }
 .food .food_box .food_putin .putin_button {
 	width: 80px;
 	height: 40px;
 	margin-left: 630px;
 	margin-top: 20px;
+	background: url(../images/具体菜品页面/发送评价图标80x40.jpg);
+	border:0;
+	color: white;
 }
 
 .footer{
